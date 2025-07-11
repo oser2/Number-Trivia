@@ -5,7 +5,7 @@ const factField = document.querySelector(".fact")
 let number = input.value
 
 let fetchFact = (num) => {
-  let Url = `https://numbersapi.com/${num}`;
+  let Url = `http://numbersapi.com/${num}`;
   fetch(Url)
     .then((resp) => resp.text())
     .then((data) => {
@@ -15,7 +15,7 @@ let fetchFact = (num) => {
     });
 };
 let fetchFactAuto = (num) => {
-  let Url = `https://numbersapi.com/${num}`;
+  let Url = `http://numbersapi.com/${num}`;
   fetch(Url)
     .then((resp) => resp.text())
     .then((data) => {
